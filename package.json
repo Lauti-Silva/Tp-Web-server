@@ -4,6 +4,7 @@
   "description": "L-d-C",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "nodemon app"
   },
   "keywords": [],
