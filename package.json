@@ -4,10 +4,12 @@
   "description": "L-d-C",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "nodemon":"nodemon --match server.js",
-    "dev": "nodemon app"
-  },
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env = jsdom ",
+    " eject " :" react-scripts"
+   },
   "keywords": [],
   "author": "Lautaro Silva",
   "license": "ISC",
