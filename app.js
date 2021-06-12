@@ -2,7 +2,7 @@
 const express = require('express');
 const hbs = require('hbs');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 //TODO: Requerimos de (hbs);
 app.set('view engine', 'hbs');
@@ -27,7 +27,6 @@ app.get('/', function (req, res) {
         titulo: 'Clase de NodeJS con HBS'
     })
   });
-
 
 app.get('/generic', function (req, res) {
     res.render('generic')
